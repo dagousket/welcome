@@ -1,1 +1,1 @@
-![my_cv](./cv_2022_nocontact.png)
+![my_cv](./swann_flochlay_2025.png)
