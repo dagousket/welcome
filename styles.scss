@@ -12,12 +12,14 @@ $white: #ffffff;
 $vert_nature: #002d2d;
 $vert_avenir: #32a68c;
 $vert_tendre: #89e0b1;
+$vert_accueillant: #78c2ad;
 $bleu_horizon: #000037;
 $bleu_inclusif: #5862ed;
 $bleu_evasion: #7abaff;
 $marron_durable: #2d0505;
 $rouge_action: #fc535c;
-$rose_accueillant: #ffb4d2;
+$rose_accueillant: #f3969a;
+$rose_arthur: #ffb4d2;
 $beige_serein: #faf0e1;
 $gris_clair: #ededed;
 
@@ -38,4 +40,30 @@ $body-color: $black !default;
   src: url('./fonts/parkinsans-v1-latin-600.woff2') format('woff2');
   font-weight: 600;
   font-style: normal;
+}
+
+.pink {
+    color: $rose_accueillant;
+    font-size: 1.25rem;
+    margin-right: 5px;
+}
+
+.ref {
+  font-weight: 600;
+}
+
+.vert {
+  color: $vert_accueillant;
+}
+
+.caption{
+   text-align: center;
+}
+
+h1 {
+  color: $vert_accueillant;
+}
+
+h2 {
+  color: $rose_accueillant;
 }

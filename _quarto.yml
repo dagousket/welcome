@@ -2,14 +2,26 @@ project:
   type: website
 
 website:
-  title: "sum title"
+  title: ""
   navbar:
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
+      - href: recherche.qmd
+        text: Projets de recherche
+        icon: "lightning-charge-fill"
+      - href: dev.qmd
+        text: Projets R
+        icon: "terminal-fill"
+      - href: publi.qmd
+        text: Publications
+        icon: "pen-fill"
 
 format:
   html:
     theme: [minty, styles.scss]
     toc: true
+    from: markdown+emoji
+    cap-location: margin
+
+bibliography: refs.bib
