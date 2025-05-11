@@ -1,0 +1,41 @@
+/*-- scss:defaults --*/
+
+// Fonts
+$font-family-sans-serif:     "Parkinsans", sans-serif;
+$headings-font-family:     "Parkinsans", sans-serif;
+$web-font-path:              "No";
+
+// Colors
+$black: #000000;
+$white: #ffffff;
+
+$vert_nature: #002d2d;
+$vert_avenir: #32a68c;
+$vert_tendre: #89e0b1;
+$bleu_horizon: #000037;
+$bleu_inclusif: #5862ed;
+$bleu_evasion: #7abaff;
+$marron_durable: #2d0505;
+$rouge_action: #fc535c;
+$rose_accueillant: #ffb4d2;
+$beige_serein: #faf0e1;
+$gris_clair: #ededed;
+
+$body-bg: $white !default;
+$link-color: $rose_accueillant !default;
+$body-color: $black !default;
+
+/*-- scss:rules --*/
+@font-face{
+  font-family: 'Parkinsans';
+  src: url('./fonts/parkinsans-v1-latin-regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: 'Parkinsans';
+  src: url('./fonts/parkinsans-v1-latin-600.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
