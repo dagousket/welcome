@@ -1,0 +1,39 @@
+---
+title: "Publications"
+nocite: |
+  @flochlay_deciphering_2020, @flochlay_cis-acting_2021, @flochlay_shared_2023
+---
+
+Ici, vous trouverez mes publications scientifiques, ainsi que des articles de vulgarisation et des projets personnels.
+
+## Publications scientifiques
+
+::: {#refs}
+:::
+
+## Articles de vulgarisation
+
+
+:::: {.columns style='display: flex'}
+
+::: {.column style='display: flex; align-items: center;'}
+![](media/blog.png){width="70%" fig-align="center"}
+:::
+
+::: {.column width=90%}
+<span class="ref">Dompter son namespace avec un zest de suggest</span>
+
+<i class="bi bi-link-45deg pink"></i>  Article de blog sur [Rtask](https://rtask.thinkr.fr/fr/dompter-son-namespace-avec-un-zest-de-suggests/)
+
+<i class="bi bi-share-fill pink"></i>  Présenté aux [Rencontres R 2024](https://github.com/Rencontres-R/Rencontres_R_2024/blob/main/Pr%C3%A9sentations/01_Mercredi/04_Courte%201/02_Floc'hlay_Swann_Pour%20un%20namespace%20tout%20en%20souplesse.html)
+
+<i class="bi bi-share-fill pink"></i>  Mentionné dans le podcast [R weekly](https://share.fireside.fm/episode/87RSVeFz+2xVMmpYZ)
+:::
+
+::::
+
+## Projets open-source
+
+Python truc
+
+Appli shiny

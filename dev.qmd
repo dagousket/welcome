@@ -1,0 +1,15 @@
+---
+title: "Projets R"
+---
+
+Ici se trouvent une sélection de mes projets réalisés sur R en tant que consultante chez ThinkR entre 2022 et 2024.
+
+## Mise en package du projet Fishmap
+
+...
+
+## Application de suivi sensométrique
+
+...
+
+## Package Squash

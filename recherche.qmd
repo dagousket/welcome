@@ -1,0 +1,41 @@
+---
+title: "Projets de recherche"
+---
+
+Vous trouverez ici un résumé pour chacun de mes projets de recherche effectués lors de ma thèse et de mon post-doc entre 2016 et 2022.
+
+## Modélisation booléenne
+
+Dans le contexte du développement embryonnaire de l'oursin, j'ai cherché à mieux comprendre les intéractions entre différentes voies de signalisation.
+
+Pour cela, j'ai construit un modèle logique incoporant les principaux régulateurs de l'axe dorso-ventral et leurs actions de régulation extraites depuis la littérature (_e.g._ activation, inhibition).
+
+J'ai ensuite utilisé ce modèle pour simuler des perturbations et proposer des hypothèses de régulation. Les perturbations ont été réalisées sur le modèle classique et également sur un modèle dit _cinétique_ qui incorpore une dimension temporelle via un algorithme de gillespie.
+
+![Image d'embryon d'oursin (haut) et extrait du  modèle booléen de régulation de l'axe dorso-ventral (bas).](media/paracentrotus.png){#fig-paracentrotus width=60%}
+
+<span class="vert">**Résultat:** Nos simulations suggèrent que la hiérarchie temporelle entre les deux voies de signalisation est critique pour l'établissement de l'axe dorso-ventral. Cette hypothèse a été validé expérimentalement en laboratoire.</span>
+
+<i class="bi bi-link-45deg pink"></i>  [Floc'hlay et al. 2020](https://doi.org/10.1242/dev.189944)
+
+## Analyse de déséquilibre allélique
+
+Je me suis interessée à la régulation du dévelopement embryonnaire de la drosophile, au niveau transcriptionel (ARN) et épigénétique (chromatine, marqueurs épigénétiques).
+
+Grâce à la génération d'une banque de croisements issus de lignées homozygotes, nous pouvons estimer l'activité de chaque allèle via la détection des polymorphismes de nucléotides simples (SNPs).
+
+Pour chaque niveau de régulation (ARN, chromatine etc.), on obtient un ratio d'expression allélique. Pour chaque région du génome, j'ai analysé la corrélatin des  ratios entre chaque couche de régulation.
+
+Afin d'éviter les biais de corrélations indirectes, je me suis basée sur une étude des corrélations partielles, ou seuls les résidus des régressions linéaire sont pris en compte.
+
+![Une régression linéraire est réalisé sur les résidus de deux observations relatif à une troisième observation (le facteur confondant). La corrélation partielle ainsi calculée est significative pour une des deux régressions (droite).](media/allelic.png){#fig-allele width=70%}
+
+<span class="vert">**Résultat:** Les corrélations simples sont significatives pour chaque paires de relation. Cependant, les corrélations partielles démontrent qu'il existe un lien de régulation direct uniquement pour cinq des neuf paires de mesures étudiées.</span>
+
+<i class="bi bi-link-45deg pink"></i> [Floc'hlay et al. 2021](https://doi.org/10.1101/gr.266338.120)
+
+## Inférence de réseaux de régulation
+
+![ph](media/wound.png){width=50%}
+
+<i class="bi bi-link-45deg pink"></i> [Floc'hlay et al. 2023](https://doi.org/10.7554/elife.81173)

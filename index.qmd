@@ -1,7 +1,13 @@
 ---
-title: "testwebsite"
+title: "Bienvenue"
 ---
 
-This is a Quarto website.
+Vous êtes sur la page d'accueil de mon site personnel. Ici, vous trouverez des informations sur mon parcours et mes projets.
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+### Qui suis-je
+
+![](media/timeline.png){width=80% fig-align="center"}
+
+### Mes outils
+
+R, Python, SQL, stats, ...
