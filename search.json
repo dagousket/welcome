@@ -1,5 +1,12 @@
 [
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Bienvenue",
+    "section": "",
+    "text": "Vous êtes sur la page d’accueil de mon site personnel. Ici, vous trouverez des informations sur mon parcours et mes projets.\n\nQui suis-je\nJe m’appelle Swann, je suis bioinformaticienne de formation et je m’intéresse aux domaines des statistiques, de la biologie et de l’informatique. J’ai un parcours académique, avec un doctorat et un postdoc en bioinformatique (voir mes projets de recherches).\nJ’ai également travaillé comme consultante et formatrice R chez ThinkR, où j’ai affiné ma connaissance de R et mes pratiques de développement. J’ai eu l’occasion de travailler sur des projets variés, allant de la mise en package d’outils statistiques à la création d’applications Shiny (voir mes projets R).\n\n\n\n\n\n\n\nMes outils\n R, Python, SQL, bash\n Git, GitLab, GitHub, Docker\n Rmarkdown, Quarto, SCSS, LaTeX"
+  },
+  {
     "objectID": "recherche.html",
     "href": "recherche.html",
     "title": "Projets de recherche",
@@ -26,13 +33,6 @@
     "title": "Projets de recherche",
     "section": "Inférence de réseaux de régulation",
     "text": "Inférence de réseaux de régulation\nGrâce à la génération de données multiomiques en cellule unique, j’ai étudié la régulation transcriptionnelle chez l’embryon de drosophile. Plus particulièrement, j’ai utilisé un jeu de données issus d’embrons sains et d’embryons ayant subi une ablation du disque imaginal de l’aile.\nLa dimension du jeu de données permet d’utiliser un algorithme d’inférence de réseau. Cet algorithme permet d’associer un trio de facteur de transcription, de région régulatrice et de gène cible. Le lien entre un facteur de transcription et une région régulatrice et détecté selon le principe d’enrichissement de motif de liaison. Les liens entre région régulatrice et gène cible sont eux établis par la détection de co-activité par Random Forest.\nLe réseau de régulation ainsi obtenu est utilisé pour calculer un score global d’activité par cellule pour chaque facteur de transcription, en fonction de l’activité de ses régions et gènes cibles.\n\n\n\nUn example de trio de régulation motif-région-gène (haut) et son score calculé sur chaque cellule du jeu de donnée en fonction de l’activité des gènes et des régions cibles (bas).\n\n\nRésultat: Les réseaux de régulation détectés confirme les connaissances établies sur le dévelopement du disque imaginal. Les données provenant d’embryons avec ablation détectent deux nouvelles populations de cellules arborant une activité transcriptionnelle liée à la réponse au stress et la prolifération. Une des deux populations comporte nottement les marqueurs de sénécence cellulaire, ce qui suggère un parralèle avec les modèles tumoraux.\n Floc’hlay et al. 2023"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Bienvenue",
-    "section": "",
-    "text": "Vous êtes sur la page d’accueil de mon site personnel. Ici, vous trouverez des informations sur mon parcours et mes projets.\n\nQui suis-je\nJe m’appelle Swann, je suis bioinformaticienne de formation et je m’intéresse aux domaines des statistiques, de la biologie et de l’informatique. J’ai un parcours académique, avec un doctorat et un postdoc en bioinformatique (voir mes projets de recherches).\nJ’ai également travaillé comme consultante et formatrice R chez ThinkR, où j’ai affiné ma connaissance de R et mes pratiques de développement. J’ai eu l’occasion de travailler sur des projets variés, allant de la mise en package d’outils statistiques à la création d’applications Shiny (voir mes projets R).\n\n\n\n\n\n\n\nMes outils\n R, Python, SQL, bash\n Git, GitLab, GitHub, Docker\n Rmarkdown, Quarto, SCSS, LaTeX"
   },
   {
     "objectID": "dev.html",
