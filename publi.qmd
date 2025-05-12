@@ -34,6 +34,16 @@ Ici, vous trouverez mes publications scientifiques, ainsi que des articles de vu
 
 ## Projets open-source
 
-Python truc
+<span class="ref">{lurex}: une application shiny pour les regex</span>
 
-Appli shiny
+Cette application shiny permet de construire une regex depuis un module de sélection interactive. J'ai développé cette application comme un première approche ludique des expressions régulières, souvent peut appréciées des développeurs.
+
+<i class="bi bi-link-45deg pink"></i> Code sur [GitHub](https://github.com/dagousket/lurex)
+
+<i class="bi bi-share-fill pink"></i> Application déployée avec [ShinyLive](https://dagousket.github.io/lurex/)
+
+<span class="ref">{millefeuille}: un package python pour les coordonnées génomique</span>
+
+Ce package en cours de développment permet de manipuler des données génomiques et convertir certains format entre eux (bed6, bed12, gff). Il est écrit en python, et possède une architecture de test unitaire fonctionelle.
+
+<i class="bi bi-link-45deg pink"></i> Code sur [GitHub](https://github.com/dagousket/millefeuille)
