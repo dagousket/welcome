@@ -1,0 +1,93 @@
+[
+  {
+    "objectID": "recherche.html",
+    "href": "recherche.html",
+    "title": "Projets de recherche",
+    "section": "",
+    "text": "Vous trouverez ici un résumé pour chacun de mes projets de recherche effectués lors de ma thèse et de mon post-doc entre 2016 et 2022."
+  },
+  {
+    "objectID": "recherche.html#modélisation-booléenne",
+    "href": "recherche.html#modélisation-booléenne",
+    "title": "Projets de recherche",
+    "section": "Modélisation booléenne",
+    "text": "Modélisation booléenne\nDans le contexte du développement embryonnaire de l’oursin, j’ai cherché à mieux comprendre les intéractions entre différentes voies de signalisation.\nPour cela, j’ai construit un modèle logique incoporant les principaux régulateurs de l’axe dorso-ventral et leurs actions de régulation extraites depuis la littérature (e.g. activation, inhibition).\nJ’ai ensuite utilisé ce modèle pour simuler des perturbations et proposer des hypothèses de régulation. Les perturbations ont été réalisées sur le modèle classique et également sur un modèle dit cinétique qui incorpore une dimension temporelle via un algorithme de gillespie.\n\n\n\n\n\n\nFigure 1: Image d’embryon d’oursin (haut) et extrait du modèle booléen de régulation de l’axe dorso-ventral (bas).\n\n\n\nRésultat: Nos simulations suggèrent que la hiérarchie temporelle entre les deux voies de signalisation est critique pour l’établissement de l’axe dorso-ventral. Cette hypothèse a été validé expérimentalement en laboratoire.\n Floc’hlay et al. 2020"
+  },
+  {
+    "objectID": "recherche.html#analyse-de-déséquilibre-allélique",
+    "href": "recherche.html#analyse-de-déséquilibre-allélique",
+    "title": "Projets de recherche",
+    "section": "Analyse de déséquilibre allélique",
+    "text": "Analyse de déséquilibre allélique\nJe me suis interessée à la régulation du dévelopement embryonnaire de la drosophile, au niveau transcriptionel (ARN) et épigénétique (chromatine, marqueurs épigénétiques).\nGrâce à la génération d’une banque de croisements issus de lignées homozygotes, nous pouvons estimer l’activité de chaque allèle via la détection des polymorphismes de nucléotides simples (SNPs).\nPour chaque niveau de régulation (ARN, chromatine etc.), on obtient un ratio d’expression allélique. Pour chaque région du génome, j’ai analysé la corrélatin de ces ratios entre chaque couche de régulation.\nAfin d’éviter les biais de corrélations indirectes, je me suis basée sur une étude des corrélations partielles, où seuls les résidus des régressions linéaire sont pris en compte.\n\n\n\n\n\n\nFigure 2: Une régression linéraire est réalisé sur les résidus de deux observations relatif à une troisième observation (le facteur confondant). La corrélation partielle ainsi calculée est significative pour une des deux régressions (droite).\n\n\n\nRésultat: Les corrélations simples sont significatives pour chaque paires de relation. Cependant, les corrélations partielles démontrent qu’il existe un lien de régulation direct uniquement pour cinq des neuf paires de mesures étudiées.\n Floc’hlay et al. 2021"
+  },
+  {
+    "objectID": "recherche.html#inférence-de-réseaux-de-régulation",
+    "href": "recherche.html#inférence-de-réseaux-de-régulation",
+    "title": "Projets de recherche",
+    "section": "Inférence de réseaux de régulation",
+    "text": "Inférence de réseaux de régulation\nGrâce à la génération de données multiomiques en cellule unique, j’ai étudié la régulation transcriptionnelle chez l’embryon de drosophile. Plus particulièrement, j’ai utilisé un jeu de données issus d’embrons sains et d’embryons ayant subi une ablation du disque imaginal de l’aile.\nLa dimension du jeu de données permet d’utiliser un algorithme d’inférence de réseau. Cet algorithme permet d’associer un trio de facteur de transcription, de région régulatrice et de gène cible. Le lien entre un facteur de transcription et une région régulatrice et détecté selon le principe d’enrichissement de motif de liaison. Les liens entre région régulatrice et gène cible sont eux établis par la détection de co-activité par Random Forest.\nLe réseau de régulation ainsi obtenu est utilisé pour calculer un score global d’activité par cellule pour chaque facteur de transcription, en fonction de l’activité de ses régions et gènes cibles.\n\n\n\nUn example de trio de régulation motif-région-gène (haut) et son score calculé sur chaque cellule du jeu de donnée en fonction de l’activité des gènes et des régions cibles (bas).\n\n\nRésultat: Les réseaux de régulation détectés confirme les connaissances établies sur le dévelopement du disque imaginal. Les données provenant d’embryons avec ablation détectent deux nouvelles populations de cellules arborant une activité transcriptionnelle liée à la réponse au stress et la prolifération. Une des deux populations comporte nottement les marqueurs de sénécence cellulaire, ce qui suggère un parralèle avec les modèles tumoraux.\n Floc’hlay et al. 2023"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Bienvenue",
+    "section": "",
+    "text": "Vous êtes sur la page d’accueil de mon site personnel. Ici, vous trouverez des informations sur mon parcours et mes projets.\n\nQui suis-je\nJe m’appelle Swann, je suis bioinformaticienne de formation et je m’intéresse aux domaines des statistiques, de la biologie et de l’informatique. J’ai un parcours académique, avec un doctorat et un postdoc en bioinformatique (voir mes projets de recherches).\nJ’ai également travaillé comme consultante et formatrice R chez ThinkR, où j’ai affiné ma connaissance de R et mes pratiques de développement. J’ai eu l’occasion de travailler sur des projets variés, allant de la mise en package d’outils statistiques à la création d’applications Shiny (voir mes projets R).\n\n\n\n\n\n\n\nMes outils\n R, Python, SQL, bash\n Git, GitLab, GitHub, Docker\n Rmarkdown, Quarto, SCSS, LaTeX"
+  },
+  {
+    "objectID": "dev.html",
+    "href": "dev.html",
+    "title": "Projets R",
+    "section": "",
+    "text": "Ici se trouvent une sélection de mes projets réalisés sur R en tant que consultante chez ThinkR entre 2022 et 2024."
+  },
+  {
+    "objectID": "dev.html#mise-en-package-dune-étude-statistique",
+    "href": "dev.html#mise-en-package-dune-étude-statistique",
+    "title": "Projets R",
+    "section": "Mise en package d’une étude statistique",
+    "text": "Mise en package d’une étude statistique\nDans le cadre d’une étude statistique sur l’estimation de stock de poissons, j’ai mis en package un outil permettant d’harmoniser les données de capture hétérogènes.\nLa mise en package a été réalisée selon la méthode du golden master, où l’on s’assure que chaque modification apportée ne modifie pas le résultat statistique attendu sur un jeu de données test.\nLa mise en package s’est accompagnée de la rédaction d’une documentation technique et d’un refactoring des paramètres d’entrée des fonctions.\n\n\n\n\n\n\nFigure 1: Un exemple de données en entrée (gauche) et en sortie (droite) du modèle. Les valeurs hétérogènes sont utilisée pour estimer les stock sur l’ensemble du territoire.\n\n\n\nRésultat: Le package {fishmap} est disponible en open-source. Il est testé, documenté, et s’accompagne d’un manuel d’utilisation et d’un jeu de donnée test pour une prise en main rapide.\n Lien GitHub"
+  },
+  {
+    "objectID": "dev.html#application-pour-le-suivi-détude-sensométrique",
+    "href": "dev.html#application-pour-le-suivi-détude-sensométrique",
+    "title": "Projets R",
+    "section": "Application pour le suivi d’étude sensométrique",
+    "text": "Application pour le suivi d’étude sensométrique\nCe projet a pour objectif d’améliorer une application Shiny d’analyse sensométrique. Ce travail a consisté à refactoriser le code existant et fluidifier l’interface utilisateur.\nL’application se base sur un requêtage SQL de la base de données pour proposer à l’utilisateur un choix de produit à selectionner. Une ANOVA est ensuite réalisé et retransmise sous forme de rapport téléchargeable.\nCe rapport contient les résultats sous forme de graphiques et de tableaux (ACP, boxplot, heatmap), résumant la capacité à discriminer les produits pour le panel dans son ensemble et pour chaque paneliste.\nRésultat: L’utilisation de la nouvelle version de l’application a nettement reduit le temps dédié à la construction du rapport statistiques, l’expérience utilisateur est fluidifiée tout en enrichissant le contenu graphique de l’application.\n\n\n\n\n\n\nFigure 2: Schéma de fonctionnement de l’application, avec un exemple de graphique de sortie (PCA loadings)."
+  },
+  {
+    "objectID": "dev.html#développement-dun-package-de-présentation-quarto",
+    "href": "dev.html#développement-dun-package-de-présentation-quarto",
+    "title": "Projets R",
+    "section": "Développement d’un package de présentation quarto",
+    "text": "Développement d’un package de présentation quarto\nEn tant que formatrice R, il m’a été nécessaire de développer du contenu pédagogique pour mes formations. Le format quarto permet de créer des présentations en revealjs/html, mais uniquement à partir d’un seul fichier source.\nComme les cours sont rédiger chapitre par chapitre, j’ai développé le package {squash}, permettant de générer une présentation à partir de plusieurs fichiers source.\nJ’ai rédigé sa documentation dans le but qu’il soit accessible à tout utilisateur de R. Pour les développeurs avancés, il est possible de personnaliser le résultat via l’ajout d’extensions et de paramètres d’entrée optionnels.\n\n\n\n\n\n\nFigure 3: Le shéma d’action du package: à partir de plusieurs fichiers quarto indépendants, on crée une seule présentation html regroupant l’ensemble du contenu original.\n\n\n\nRésultat: Le package {squash} est disponible en open-source. Il est testé, documenté et déployé en continue sur GitHub. Il est utilisé en routine chez ThinkR pour ses formations R.\n Lien documentation"
+  },
+  {
+    "objectID": "publi.html",
+    "href": "publi.html",
+    "title": "Publications",
+    "section": "",
+    "text": "Ici, vous trouverez mes publications scientifiques, ainsi que des articles de vulgarisation et des projets personnels."
+  },
+  {
+    "objectID": "publi.html#publications-scientifiques",
+    "href": "publi.html#publications-scientifiques",
+    "title": "Publications",
+    "section": "Publications scientifiques",
+    "text": "Publications scientifiques\n\n\nFloc’hlay, Swann, Ramya Balaji, Dimitrije Stanković, Valerie M Christiaens, Carmen Bravo González-Blas, Seppe De Winter, Gert J Hulselmans, et al. 2023. “Shared Enhancer Gene Regulatory Networks Between Wound and Oncogenic Programs.” eLife 12 (May): e81173. https://doi.org/10.7554/eLife.81173.\n\n\nFloc’hlay, Swann, Maria Dolores Molina, Céline Hernandez, Emmanuel Haillot, Morgane Thomas-Chollier, Thierry Lepage, and Denis Thieffry. 2020. “Deciphering and Modelling the TGF-β Signalling Interplays Specifying the Dorsal-Ventral Axis of the Sea Urchin Embryo.” Development, January, dev.189944. https://doi.org/10.1242/dev.189944.\n\n\nFloc’hlay, Swann, Emily S. Wong, Bingqing Zhao, Rebecca R. Viales, Morgane Thomas-Chollier, Denis Thieffry, David A. Garfield, and Eileen E. M. Furlong. 2021. “Cis-Acting Variation Is Common Across Regulatory Layers but Is Often Buffered During Embryonic Development.” Genome Research 31 (2): 211–24. https://doi.org/10.1101/gr.266338.120."
+  },
+  {
+    "objectID": "publi.html#articles-de-vulgarisation",
+    "href": "publi.html#articles-de-vulgarisation",
+    "title": "Publications",
+    "section": "Articles de vulgarisation",
+    "text": "Articles de vulgarisation\n\n\n\n\n\n\n\n\nDompter son namespace avec un zest de suggest\n Article de blog sur Rtask\n Présenté aux Rencontres R 2024\n Mentionné dans le podcast R weekly"
+  },
+  {
+    "objectID": "publi.html#projets-open-source",
+    "href": "publi.html#projets-open-source",
+    "title": "Publications",
+    "section": "Projets open-source",
+    "text": "Projets open-source\n{lurex}: une application shiny pour les regex\nCette application shiny permet de construire une regex depuis un module de sélection interactive. J’ai développé cette application comme un première approche ludique des expressions régulières, souvent peut appréciées des développeurs.\n Code sur GitHub\n Application déployée avec ShinyLive\n{millefeuille}: un package python pour les coordonnées génomique\nCe package en cours de développment permet de manipuler des données génomiques et convertir certains format entre eux (bed6, bed12, gff). Il est écrit en python, et possède une architecture de test unitaire fonctionelle.\n Code sur GitHub"
+  }
+]
