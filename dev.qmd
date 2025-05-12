@@ -4,12 +4,34 @@ title: "Projets R"
 
 Ici se trouvent une sélection de mes projets réalisés sur R en tant que consultante chez ThinkR entre 2022 et 2024.
 
-## Mise en package du projet Fishmap
+## Mise en package d'une étude statistique
 
-...
+Dans le cadre d'une étude statistique sur l'estimation de stock de poissons, j'ai mis en  package un outil permettant d'harmoniser les données de capture hétérogènes.
 
-## Application de suivi sensométrique
+La mise en package a été réalisée selon la méthode du _golden master_, où l'on s'assure que chaque modification apportée ne modifie pas le résultat statistique attendu sur un jeu de données test.
 
-...
+La mise en package s'est accompagnée de la rédaction d'une documentation technique et d'un refactoring des paramètres d'entrée des fonctions.
 
-## Package Squash
+![Un exemple de données en entrée (gauche) et en sortie (droite) du modèle. Les valeurs hétérogènes sont utilisée pour estimer les stock sur l'ensemble du tarritoire.](media/fishmap.png){#fig-fishmap width=70%}
+
+<span class="vert">**Résultat:** voila voila.</span>
+
+<i class="bi bi-link-45deg pink"></i> [Lien GitHub](https://github.com/balglave/FishMap)
+
+## Application pour le suivi d'étude sensométrique
+
+![Un exemple de données en entrée (gauche) et en sortie (droite) du modèle. Les valeurs hétérogènes sont utilisée pour estimer les stock sur l'ensemble du tarritoire.](media/shinyapp.png){#fig-shiny width=70%}
+
+## Développement d'un package de présentation quarto
+
+En tant que formatrice R, il m'a été nécessaire de développer du contenu pédagogique pour mes formations au format quarto. Ce format permet de créer des présentations au format revealjs/html, mais uniquement à partir d'un seul fichier source.
+
+Comme les cours sont rédiger chapitre par chapitre, il m'a fallu développer le package [{squash}](https://github.com/ThinkR-open/squash), permettant de générer une présentation à partir de plusieurs fichiers source.
+
+J'ai rédigé sa docuentation dans le but qu'il soit accessible à tout utilisateur de R. Pour les développeurs avancés, il est possible de personnaliser le résultat via l'ajout d'extensions et de paramètres d'entrée optionnels.
+
+![Le shéma d'action  du package: à partir de plusieurs fichiers quarto indépendants, on crée une seule présentation html regroupant l'ensemble du contenu original.](media/squash.png){#fig-squash width=90%}
+
+<span class="vert">**Résultat:** Le package {squash} est disponible en open-source. Il est testé, documenté et déployé en continue sur GitHub. Il est utilisé en routine chez ThinkR pour ses formations R.</span>
+
+<i class="bi bi-link-45deg pink"></i> [Lien documentation](https://thinkr-open.github.io/squash/)

@@ -24,9 +24,9 @@ Je me suis interessée à la régulation du dévelopement embryonnaire de la dro
 
 Grâce à la génération d'une banque de croisements issus de lignées homozygotes, nous pouvons estimer l'activité de chaque allèle via la détection des polymorphismes de nucléotides simples (SNPs).
 
-Pour chaque niveau de régulation (ARN, chromatine etc.), on obtient un ratio d'expression allélique. Pour chaque région du génome, j'ai analysé la corrélatin des  ratios entre chaque couche de régulation.
+Pour chaque niveau de régulation (ARN, chromatine etc.), on obtient un ratio d'expression allélique. Pour chaque région du génome, j'ai analysé la corrélatin de ces ratios entre chaque couche de régulation.
 
-Afin d'éviter les biais de corrélations indirectes, je me suis basée sur une étude des corrélations partielles, ou seuls les résidus des régressions linéaire sont pris en compte.
+Afin d'éviter les biais de corrélations indirectes, je me suis basée sur une étude des corrélations partielles, où seuls les résidus des régressions linéaire sont pris en compte.
 
 ![Une régression linéraire est réalisé sur les résidus de deux observations relatif à une troisième observation (le facteur confondant). La corrélation partielle ainsi calculée est significative pour une des deux régressions (droite).](media/allelic.png){#fig-allele width=70%}
 
@@ -36,6 +36,14 @@ Afin d'éviter les biais de corrélations indirectes, je me suis basée sur une 
 
 ## Inférence de réseaux de régulation
 
-![ph](media/wound.png){width=50%}
+Grâce à la génération de données multiomiques en cellule unique, j'ai étudié la régulation transcriptionnelle chez l'embryon de drosophile. Plus particulièrement, j'ai utilisé un jeu de données issus d'embrons sains et d'embryons ayant subi une ablation du disque imaginal de l'aile.
+
+La dimension du jeu de données permet d'utiliser un algorithme d'inférence de réseau. Cet algorithme permet d'associer un trio de facteur de transcription, de région régulatrice et de gène cible. Le lien entre un facteur de transcription et une région régulatrice et détecté selon le principe d'enrichissement de motif de liaison. Les liens entre région régulatrice et gène cible sont eux établis par la détection de co-activité par Random Forest.
+
+Le réseau de régulation ainsi obtenu est utilisé pour calculer un score global d'activité par  cellule pour chaque facteur de transcription, en fonction de l'activité de ses régions et gènes cibles.
+
+![Un example de trio de régulation motif-région-gène (haut) et son score calculé sur chaque cellule du jeu de donnée en fonction de l'activité des gènes et des régions cibles (bas).](media/wound.png){width=70%}
+
+<span class="vert">**Résultat:** Les réseaux de régulation détectés confirme les connaissances établies sur le dévelopement du  disque imaginal. Les données provenant d'embryons avec ablation détectent deux nouvelles populations de cellules arborant une activité transcriptionnelle liée à la réponse au stress et la prolifération. Une des deux populations comporte nottement les marqueurs de sénécence cellulaire, ce qui suggère un parralèle avec les modèles tumoraux.</span>
 
 <i class="bi bi-link-45deg pink"></i> [Floc'hlay et al. 2023](https://doi.org/10.7554/elife.81173)
