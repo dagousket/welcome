@@ -18,13 +18,15 @@ J'ai ensuite utilisé ce modèle pour simuler des perturbations et proposer des 
 
 <i class="bi bi-link-45deg pink"></i>  [Floc'hlay et al. 2020](https://doi.org/10.1242/dev.189944)
 
+<i class="bi bi-youtube pink"></i> [Présentation](https://www.youtube.com/watch?v=9IjIBkmCa5g) au webminaire **Development presents...**
+
 ## Analyse de déséquilibre allélique
 
 Je me suis interessée à la régulation du dévelopement embryonnaire de la drosophile, au niveau transcriptionnel (ARN) et épigénétique (chromatine, marqueurs épigénétiques).
 
 Grâce à la génération d'une banque de croisements issus de lignées homozygotes, nous pouvons estimer l'activité de chaque allèle via la détection des polymorphismes de nucléotides simples (SNPs).
 
-Pour chaque niveau de régulation (ARN, chromatine, etc.), on obtient un ratio d'expression allélique père/mère. Pour chaque région du génome, j'ai analysé la corrélatin de ces ratios entre chaque couche de régulation.
+Pour chaque niveau de régulation (ARN, chromatine, _etc_), on obtient un ratio d'expression allélique père/mère. Pour chaque région du génome, j'ai analysé la corrélatin de ces ratios entre chaque couche de régulation.
 
 Afin d'éviter les biais de corrélations indirectes, je me suis basée sur une étude des corrélations partielles, où seuls les résidus de régression linéaire sont pris en compte.
 
@@ -33,6 +35,8 @@ Afin d'éviter les biais de corrélations indirectes, je me suis basée sur une 
 <span class="vert">**Résultat:** Les corrélations simples sont significatives pour toutes les relations mesurées. Cependant, les corrélations partielles démontrent qu'il existe un lien de régulation direct uniquement pour cinq des neuf paires de mesures étudiées.</span>
 
 <i class="bi bi-link-45deg pink"></i> [Floc'hlay et al. 2021](https://doi.org/10.1101/gr.266338.120)
+
+<i class="bi bi-youtube pink"></i> [Présentation](https://www.youtube.com/watch?v=EwP8VSiUomI) à la conférence **ISMB/ECCB**
 
 ## Inférence de réseaux de régulation
 
