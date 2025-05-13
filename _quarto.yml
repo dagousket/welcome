@@ -17,6 +17,16 @@ website:
       - href: publi.qmd
         text: Publications
         icon: "pen-fill"
+    tools:
+      - icon: github
+        href: https://github.com/dagousket
+      - icon: linkedin
+        href: https://www.linkedin.com/in/swann-floc-hlay-924674225/
+      - icon: mortarboard
+        href: https://orcid.org/0000-0003-1477-830X
+      - icon: envelope
+        href: mailto:swann.flochlay+gitpage@gmail.com
+    search: false
 
 format:
   html:
