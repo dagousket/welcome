@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.30">
+<meta name="generator" content="quarto-1.7.31">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -36,7 +36,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-de070a7b0ab54f8780927367ac907214.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-39c2841291bad0e869b2dbb39466e6b1.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
@@ -146,12 +146,12 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Vous trouverez ici un résumé pour chacun de mes projets de recherche effectués lors de ma thèse et de mon post-doc entre 2016 et 2022.</p>
+<p>Vous trouverez ici un résumé pour chacun de mes projets de recherche effectués lors de ma thèse et de mon post-doctorat.</p>
 <section id="modélisation-booléenne" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="modélisation-booléenne">Modélisation booléenne</h2>
 <p>Dans le contexte du développement embryonnaire de l’oursin, j’ai cherché à mieux comprendre les intéractions entre différentes voies de signalisation.</p>
-<p>Pour cela, j’ai construit un modèle logique incoporant les principaux régulateurs de l’axe dorso-ventral et leurs actions de régulation extraites depuis la littérature (<em>e.g.</em> activation, inhibition).</p>
-<p>J’ai ensuite utilisé ce modèle pour simuler des perturbations et proposer des hypothèses de régulation. Les perturbations ont été réalisées sur le modèle classique et également sur un modèle dit <em>cinétique</em> qui incorpore une dimension temporelle via un algorithme de gillespie.</p>
+<p>Pour cela, j’ai construit un modèle logique incoporant les principaux régulateurs de l’axe dorso-ventral et leurs actions de régulation, extraites de la littérature existante (<em>e.g.</em> activation, inhibition).</p>
+<p>J’ai ensuite utilisé ce modèle pour simuler des perturbations et proposer des hypothèses de régulation. Les perturbations ont été réalisées sur un modèle classique et également sur un modèle dit <em>cinétique</em> qui incorpore une dimension temporelle via un algorithme de gillespie.</p>
 <div id="fig-paracentrotus" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full">
 <figure class="quarto-float quarto-float-fig figure page-columns page-full">
 <div aria-describedby="fig-paracentrotus-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -162,40 +162,40 @@ Figure&nbsp;1: Image d’embryon d’oursin (haut) et extrait du modèle boolée
 </figcaption>
 </figure>
 </div>
-<p><span class="vert"><strong>Résultat:</strong> Nos simulations suggèrent que la hiérarchie temporelle entre les deux voies de signalisation est critique pour l’établissement de l’axe dorso-ventral. Cette hypothèse a été validé expérimentalement en laboratoire.</span></p>
+<p><span class="vert"><strong>Résultat:</strong> Nos simulations suggèrent que la hiérarchie temporelle entre les deux voies de signalisation est critique pour l’établissement de l’axe dorso-ventral. Cette hypothèse a été validée expérimentalement en laboratoire.</span></p>
 <p><i class="bi bi-link-45deg pink"></i> <a href="https://doi.org/10.1242/dev.189944">Floc’hlay et al.&nbsp;2020</a></p>
 </section>
 <section id="analyse-de-déséquilibre-allélique" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="analyse-de-déséquilibre-allélique">Analyse de déséquilibre allélique</h2>
-<p>Je me suis interessée à la régulation du dévelopement embryonnaire de la drosophile, au niveau transcriptionel (ARN) et épigénétique (chromatine, marqueurs épigénétiques).</p>
+<p>Je me suis interessée à la régulation du dévelopement embryonnaire de la drosophile, au niveau transcriptionnel (ARN) et épigénétique (chromatine, marqueurs épigénétiques).</p>
 <p>Grâce à la génération d’une banque de croisements issus de lignées homozygotes, nous pouvons estimer l’activité de chaque allèle via la détection des polymorphismes de nucléotides simples (SNPs).</p>
-<p>Pour chaque niveau de régulation (ARN, chromatine etc.), on obtient un ratio d’expression allélique. Pour chaque région du génome, j’ai analysé la corrélatin de ces ratios entre chaque couche de régulation.</p>
-<p>Afin d’éviter les biais de corrélations indirectes, je me suis basée sur une étude des corrélations partielles, où seuls les résidus des régressions linéaire sont pris en compte.</p>
+<p>Pour chaque niveau de régulation (ARN, chromatine, etc.), on obtient un ratio d’expression allélique père/mère. Pour chaque région du génome, j’ai analysé la corrélatin de ces ratios entre chaque couche de régulation.</p>
+<p>Afin d’éviter les biais de corrélations indirectes, je me suis basée sur une étude des corrélations partielles, où seuls les résidus de régression linéaire sont pris en compte.</p>
 <div id="fig-allele" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full">
 <figure class="quarto-float quarto-float-fig figure page-columns page-full">
 <div aria-describedby="fig-allele-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="media/allelic.png" class="img-fluid figure-img" style="width:70.0%">
 </div>
 <figcaption class="quarto-float-caption-margin quarto-float-caption quarto-float-fig margin-caption" id="fig-allele-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;2: Une régression linéraire est réalisé sur les résidus de deux observations relatif à une troisième observation (le facteur confondant). La corrélation partielle ainsi calculée est significative pour une des deux régressions (droite).
+Figure&nbsp;2: Une régression linéraire est réalisé sur les résidus de deux observations relative à une troisième observation (le facteur confondant). La corrélation partielle ainsi calculée est significative pour une seule des deux régressions (à droite).
 </figcaption>
 </figure>
 </div>
-<p><span class="vert"><strong>Résultat:</strong> Les corrélations simples sont significatives pour chaque paires de relation. Cependant, les corrélations partielles démontrent qu’il existe un lien de régulation direct uniquement pour cinq des neuf paires de mesures étudiées.</span></p>
+<p><span class="vert"><strong>Résultat:</strong> Les corrélations simples sont significatives pour toutes les relations mesurées. Cependant, les corrélations partielles démontrent qu’il existe un lien de régulation direct uniquement pour cinq des neuf paires de mesures étudiées.</span></p>
 <p><i class="bi bi-link-45deg pink"></i> <a href="https://doi.org/10.1101/gr.266338.120">Floc’hlay et al.&nbsp;2021</a></p>
 </section>
 <section id="inférence-de-réseaux-de-régulation" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="inférence-de-réseaux-de-régulation">Inférence de réseaux de régulation</h2>
-<p>Grâce à la génération de données multiomiques en cellule unique, j’ai étudié la régulation transcriptionnelle chez l’embryon de drosophile. Plus particulièrement, j’ai utilisé un jeu de données issus d’embrons sains et d’embryons ayant subi une ablation du disque imaginal de l’aile.</p>
-<p>La dimension du jeu de données permet d’utiliser un algorithme d’inférence de réseau. Cet algorithme permet d’associer un trio de facteur de transcription, de région régulatrice et de gène cible. Le lien entre un facteur de transcription et une région régulatrice et détecté selon le principe d’enrichissement de motif de liaison. Les liens entre région régulatrice et gène cible sont eux établis par la détection de co-activité par Random Forest.</p>
-<p>Le réseau de régulation ainsi obtenu est utilisé pour calculer un score global d’activité par cellule pour chaque facteur de transcription, en fonction de l’activité de ses régions et gènes cibles.</p>
+<p>Grâce à la génération de données multiomiques en cellule unique, j’ai étudié la régulation transcriptionnelle chez l’embryon de drosophile. Plus particulièrement, j’ai utilisé un jeu de données issus d’embryons sains et d’embryons ayant subi une ablation du disque imaginal de l’aile.</p>
+<p>La forte volumétrie du jeu de données permet d’utiliser un algorithme d’inférence de réseau. Cet algorithme permet d’associer un trio composé d’un facteur de transcription, de régions régulatrices et de gènes cibles. Le lien entre un facteur de transcription et une région régulatrice et détecté selon le principe d’enrichissement de motif de liaison. Les liens entre régions régulatrices et gènes cibles sont eux établis par la détection de co-activité par Random Forest.</p>
+<p>Le réseau de régulation ainsi obtenu est utilisé pour calculer un score global d’activité par cellule, pour chaque facteur de transcription, en fonction de l’activité de ses régions et gènes cibles.</p>
 <div class="quarto-figure quarto-figure-center page-columns page-full">
 <figure class="figure page-columns page-full">
 <p><img src="media/wound.png" class="img-fluid figure-img" style="width:70.0%"></p>
-<figcaption class="margin-caption">Un example de trio de régulation motif-région-gène (haut) et son score calculé sur chaque cellule du jeu de donnée en fonction de l’activité des gènes et des régions cibles (bas).</figcaption>
+<figcaption class="margin-caption">Un example de trio de régulation motif-région-gène (haut) et son score calculé sur chaque cellule du jeu de données, en fonction de l’activité des gènes et des régions cibles (bas).</figcaption>
 </figure>
 </div>
-<p><span class="vert"><strong>Résultat:</strong> Les réseaux de régulation détectés confirme les connaissances établies sur le dévelopement du disque imaginal. Les données provenant d’embryons avec ablation détectent deux nouvelles populations de cellules arborant une activité transcriptionnelle liée à la réponse au stress et la prolifération. Une des deux populations comporte nottement les marqueurs de sénécence cellulaire, ce qui suggère un parralèle avec les modèles tumoraux.</span></p>
+<p><span class="vert"><strong>Résultat:</strong> Les réseaux de régulation détectés confirment les connaissances établies sur le dévelopement du disque imaginal. Les données provenant d’embryons avec ablation produisent deux nouvelles populations de cellules, arborant une activité transcriptionnelle liée à la réponse au stress et à la prolifération. Une des deux populations comporte notamment des marqueurs de sénécence cellulaire, ce qui suggère une similitude avec les modèles tumoraux.</span></p>
 <p><i class="bi bi-link-45deg pink"></i> <a href="https://doi.org/10.7554/elife.81173">Floc’hlay et al.&nbsp;2023</a></p>
 
 

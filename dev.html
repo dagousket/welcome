@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.30">
+<meta name="generator" content="quarto-1.7.31">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -36,7 +36,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-de070a7b0ab54f8780927367ac907214.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-39c2841291bad0e869b2dbb39466e6b1.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
@@ -146,31 +146,31 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Ici se trouvent une sélection de mes projets réalisés sur R en tant que consultante chez ThinkR entre 2022 et 2024.</p>
+<p>Ici se trouve une sélection de mes projets réalisés sur R en tant que consultante chez ThinkR.</p>
 <section id="mise-en-package-dune-étude-statistique" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="mise-en-package-dune-étude-statistique">Mise en package d’une étude statistique</h2>
 <p>Dans le cadre d’une étude statistique sur l’estimation de stock de poissons, j’ai mis en package un outil permettant d’harmoniser les données de capture hétérogènes.</p>
 <p>La mise en package a été réalisée selon la méthode du <em>golden master</em>, où l’on s’assure que chaque modification apportée ne modifie pas le résultat statistique attendu sur un jeu de données test.</p>
-<p>La mise en package s’est accompagnée de la rédaction d’une documentation technique et d’un refactoring des paramètres d’entrée des fonctions.</p>
+<p>La mise en package s’est accompagnée de la rédaction d’une documentation technique et d’un <em>refactoring</em> des paramètres d’entrée des fonctions.</p>
 <div id="fig-fishmap" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full">
 <figure class="quarto-float quarto-float-fig figure page-columns page-full">
 <div aria-describedby="fig-fishmap-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="media/fishmap.png" class="img-fluid figure-img" style="width:70.0%">
 </div>
 <figcaption class="quarto-float-caption-margin quarto-float-caption quarto-float-fig margin-caption" id="fig-fishmap-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;1: Un exemple de données en entrée (gauche) et en sortie (droite) du modèle. Les valeurs hétérogènes sont utilisée pour estimer les stock sur l’ensemble du territoire.
+Figure&nbsp;1: Un exemple de donnée en entrée (gauche) et en sortie (droite) du modèle. Les valeurs hétérogènes sont utilisées pour estimer les stocks sur l’ensemble du territoire.
 </figcaption>
 </figure>
 </div>
-<p><span class="vert"><strong>Résultat:</strong> Le package {fishmap} est disponible en open-source. Il est testé, documenté, et s’accompagne d’un manuel d’utilisation et d’un jeu de donnée test pour une prise en main rapide.</span></p>
+<p><span class="vert"><strong>Résultat:</strong> Le package {fishmap} est disponible en open-source. Il est testé, documenté, et s’accompagne d’un manuel d’utilisation et d’un jeu de données test pour une prise en main rapide.</span></p>
 <p><i class="bi bi-link-45deg pink"></i> <a href="https://github.com/balglave/FishMap">Lien GitHub</a></p>
 </section>
 <section id="application-pour-le-suivi-détude-sensométrique" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="application-pour-le-suivi-détude-sensométrique">Application pour le suivi d’étude sensométrique</h2>
-<p>Ce projet a pour objectif d’améliorer une application Shiny d’analyse sensométrique. Ce travail a consisté à refactoriser le code existant et fluidifier l’interface utilisateur.</p>
-<p>L’application se base sur un requêtage SQL de la base de données pour proposer à l’utilisateur un choix de produit à selectionner. Une ANOVA est ensuite réalisé et retransmise sous forme de rapport téléchargeable.</p>
-<p>Ce rapport contient les résultats sous forme de graphiques et de tableaux (ACP, boxplot, heatmap), résumant la capacité à discriminer les produits pour le panel dans son ensemble et pour chaque paneliste.</p>
-<p><span class="vert"><strong>Résultat:</strong> L’utilisation de la nouvelle version de l’application a nettement reduit le temps dédié à la construction du rapport statistiques, l’expérience utilisateur est fluidifiée tout en enrichissant le contenu graphique de l’application.</span></p>
+<p>Ce projet a pour objectif d’améliorer une application Shiny d’analyse sensométrique. Ce travail a consisté à <em>refactoriser</em> le code existant et fluidifier l’interface utilisateur.</p>
+<p>L’application se base sur un requêtage SQL de la base de données pour proposer à l’utilisateur un choix de produit à selectionner. Une ANOVA est ensuite réalisée pour chaque critère de notation et retransmise sous forme de rapport téléchargeable.</p>
+<p>Ce rapport contient les résultats sous forme de graphiques et de tableaux (ACP, boxplot, heatmap), résumant la capacité du panel à discriminer les produits par critère.</p>
+<p><span class="vert"><strong>Résultat:</strong> L’utilisation de la nouvelle version de l’application a nettement réduit le temps dédié à la construction du rapport statistique, l’expérience utilisateur est fluidifiée tout en enrichissant le contenu graphique de l’application.</span></p>
 <div id="fig-shiny" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full">
 <figure class="quarto-float quarto-float-fig figure page-columns page-full">
 <div aria-describedby="fig-shiny-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -184,8 +184,8 @@ Figure&nbsp;2: Schéma de fonctionnement de l’application, avec un exemple de 
 </section>
 <section id="développement-dun-package-de-présentation-quarto" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="développement-dun-package-de-présentation-quarto">Développement d’un package de présentation quarto</h2>
-<p>En tant que formatrice R, il m’a été nécessaire de développer du contenu pédagogique pour mes formations. Le format <em>quarto</em> permet de créer des présentations en revealjs/html, mais uniquement à partir d’un seul fichier source.</p>
-<p>Comme les cours sont rédiger chapitre par chapitre, j’ai développé le package <a href="https://github.com/ThinkR-open/squash">{squash}</a>, permettant de générer une présentation à partir de plusieurs fichiers source.</p>
+<p>En tant que formatrice R, il m’a été nécessaire de développer du contenu pédagogique pour mes formations. Le format <em>quarto</em> permet de créer des présentations <em>html</em>, mais uniquement à partir d’un seul fichier source.</p>
+<p>Comme les cours sont rédigés chapitre par chapitre, j’ai développé le package <a href="https://github.com/ThinkR-open/squash">{squash}</a>, permettant de générer une présentation à partir de plusieurs fichiers <em>quarto</em> source.</p>
 <p>J’ai rédigé sa documentation dans le but qu’il soit accessible à tout utilisateur de R. Pour les développeurs avancés, il est possible de personnaliser le résultat via l’ajout d’extensions et de paramètres d’entrée optionnels.</p>
 <div id="fig-squash" class="quarto-float quarto-figure quarto-figure-center anchored page-columns page-full">
 <figure class="quarto-float quarto-float-fig figure page-columns page-full">
